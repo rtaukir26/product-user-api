@@ -2,6 +2,8 @@ const app = require("./app");
 const connectDb = require("./config/dataBase");
 require("./routes/productRouter");
 require("./routes/userRouter");
+require("./routes/addToCartRoute");
+
 const dotenv = require("dotenv");
 dotenv.config({ path: "config/config.env" });
 

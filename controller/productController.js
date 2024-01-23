@@ -40,10 +40,10 @@ exports.createProduct = catchAsyncError(async (req, res, next) => {
 
 //=====get all products
 exports.getAllProducts = catchAsyncError(async (req, res, next) => {
-  const product = await Product.find();
+  const products = await Product.find();
   res.status(200).json({
     success: true,
-    product,
+    products,
   });
 });
 
